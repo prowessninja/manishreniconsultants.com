@@ -164,4 +164,22 @@ form .home-link {
 form .home-link:hover {
     color: #d41f1f;
 }
+/* Center the Apply for a Loan section */
+.loan-application {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.loan-application h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #981010;
+}
+
+.loan-application p {
+    font-size: 18px;
+    color: #333;
+    margin-top: 10px;
+    line-height: 1.6;
+}
 
