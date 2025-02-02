@@ -38,6 +38,33 @@ main {
     margin: 20px;
 }
 
+/* New styles for the content section */
+.content-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    padding: 20px;
+}
+
+/* Left-side text content */
+.text-content {
+    width: 45%;
+    padding: 20px;
+    font-size: 18px;
+}
+
+/* Right-side full-size image */
+.image-content {
+    width: 50%;
+}
+
+.full-size-image {
+    width: 100%;
+    height: auto;
+}
+
+/* Form styles */
 form {
     max-width: 400px;
     margin: 20px auto;
@@ -62,9 +89,11 @@ button:hover {
     background-color: #218838;
 }
 
+/* Footer styles with centered disclosure text */
 footer {
     background-color: #981010;
     color: white;
     padding: 10px;
     margin-top: 20px;
+    text-align: center;
 }
