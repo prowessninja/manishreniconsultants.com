@@ -97,3 +97,71 @@ footer {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
 }
+
+/* Center the form on the page */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #f7f7f7; /* Light background color */
+}
+
+form {
+    width: 80%;
+    max-width: 600px; /* Set max width for better layout */
+    padding: 20px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+form table td {
+    padding: 12px;
+    vertical-align: middle;
+}
+
+form table label {
+    font-weight: bold;
+    display: block;
+}
+
+form table input, form table select, form table textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form table button {
+    padding: 10px 20px;
+    background-color: #981010;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form table button:hover {
+    background-color: #d41f1f;
+}
+
+form .home-link {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #981010;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+form .home-link:hover {
+    color: #d41f1f;
+}
+
