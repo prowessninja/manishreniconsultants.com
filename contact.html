@@ -27,15 +27,55 @@
 
         <!-- Formspree Form Integration -->
         <form action="https://formspree.io/f/xgvoylvq" method="POST">
+            <!-- First Name Field -->
             <label>
-                Your email:
-                <input type="email" name="email" required>
+                First Name:
+                <input type="text" name="first_name" required>
             </label>
+
+            <!-- Last Name Field -->
             <label>
-                Your message:
+                Last Name:
+                <input type="text" name="last_name" required>
+            </label>
+
+            <!-- Loan Type Dropdown -->
+            <label>
+                Type of Loan:
+                <select name="loan_type" required>
+                    <option value="Personal Loan">Personal Loan</option>
+                    <option value="Car Loan">Car Loan</option>
+                    <option value="Home Loan">Home Loan</option>
+                    <option value="Mortgage Loan">Mortgage Loan</option>
+                    <option value="Educational Loan">Educational Loan</option>
+                    <option value="Other Loan">Other Loan</option>
+                </select>
+            </label>
+
+            <!-- Phone Number Field -->
+            <label>
+                Phone Number:
+                <input type="tel" name="phone" required>
+            </label>
+
+            <!-- Take Home Salary Field (greater than 50,000) -->
+            <label>
+                Take Home Salary (greater than 50,000):
+                <input type="number" name="salary" min="50000" required>
+            </label>
+
+            <!-- Company Name Field -->
+            <label>
+                Company Working For:
+                <input type="text" name="company" required>
+            </label>
+
+            <!-- Applicant's Message -->
+            <label>
+                Message:
                 <textarea name="message" required></textarea>
             </label>
-            <!-- You can add other fields for the loan application here if needed -->
+
             <button type="submit">Send</button>
         </form>
     </main>
