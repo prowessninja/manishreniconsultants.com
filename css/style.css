@@ -1,8 +1,8 @@
 .logo {
-    width: 150px; /* Adjust size as needed */
+    width: 150px;
     height: auto;
     display: block;
-    margin: 0 auto; /* Centers the logo */
+    margin: 0 auto;
 }
 
 body {
@@ -10,8 +10,45 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
+    color: #981010;
 }
 
+/* Gradient background for the main section */
+.content-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    padding: 20px;
+    background: linear-gradient(135deg, #f7f7f7, #d4f7d4); /* Light gray to soft green */
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Left-side text content */
+.text-content {
+    width: 45%;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Right-side full-size image */
+.image-content {
+    width: 50%;
+}
+
+.full-size-image {
+    width: 100%;
+    height: auto;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.full-size-image:hover {
+    transform: scale(1.05);
+}
+
+/* Header styles */
 header {
     background-color: #981010;
     color: white;
@@ -34,61 +71,6 @@ nav ul li a {
     text-decoration: none;
 }
 
-main {
-    margin: 20px;
-}
-
-/* New styles for the content section */
-.content-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    text-align: left;
-    padding: 20px;
-}
-
-/* Left-side text content */
-.text-content {
-    width: 45%;
-    padding: 20px;
-    font-size: 18px;
-}
-
-/* Right-side full-size image */
-.image-content {
-    width: 50%;
-}
-
-.full-size-image {
-    width: 100%;
-    height: auto;
-}
-
-/* Form styles */
-form {
-    max-width: 400px;
-    margin: 20px auto;
-    display: flex;
-    flex-direction: column;
-}
-
-input, textarea {
-    margin-bottom: 10px;
-    padding: 8px;
-}
-
-button {
-    background-color: #28a745;
-    color: white;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #218838;
-}
-
 /* Footer styles with centered disclosure text */
 footer {
     background-color: #981010;
@@ -96,4 +78,22 @@ footer {
     padding: 10px;
     margin-top: 20px;
     text-align: center;
+}
+
+/* Animation for text highlight */
+@keyframes highlightText {
+    0% { color: #981010; }
+    50% { color: #d41f1f; }
+    100% { color: #981010; }
+}
+
+.text-content h2, 
+.text-content h3 {
+    animation: highlightText 2s infinite alternate;
+}
+
+/* Smooth fade-in effect */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
