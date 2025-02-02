@@ -28,8 +28,8 @@ body {
 .text-content {
     width: 45%;
     padding: 20px;
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 14px;
+    /*font-weight: bold;*/
 }
 
 /* Right-side full-size image */
