@@ -19,23 +19,29 @@
     </header>
     
     <main>
-        <form action="https://formspree.io/f/your-form-id" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+        <!-- Apply for a Loan Section -->
+        <section class="loan-application">
+            <h2>Apply for a Loan!</h2>
+            <p>Ready to take the next step in achieving your financial goals? Fill out the form below, and we’ll help you get started with the perfect loan option tailored just for you!</p>
+        </section>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-
+        <!-- Formspree Form Integration -->
+        <form action="https://formspree.io/f/xgvoylvq" method="POST">
+            <label>
+                Your email:
+                <input type="email" name="email" required>
+            </label>
+            <label>
+                Your message:
+                <textarea name="message" required></textarea>
+            </label>
+            <!-- You can add other fields for the loan application here if needed -->
             <button type="submit">Send</button>
         </form>
     </main>
 
     <footer>
         <p>&copy; 2025 Manishreni Consultants. All rights reserved.</p>
-
     </footer>
 </body>
 </html>
