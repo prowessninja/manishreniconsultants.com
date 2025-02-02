@@ -25,58 +25,52 @@
             <p>Ready to take the next step in achieving your financial goals? Fill out the form below, and we’ll help you get started with the perfect loan option tailored just for you!</p>
         </section>
 
-        <!-- Formspree Form Integration -->
+        <!-- Formspree Form Integration with Table Layout -->
         <form action="https://formspree.io/f/xgvoylvq" method="POST">
-            <!-- First Name Field -->
-            <label>
-                First Name:
-                <input type="text" name="first_name" required>
-            </label>
-
-            <!-- Last Name Field -->
-            <label>
-                Last Name:
-                <input type="text" name="last_name" required>
-            </label>
-
-            <!-- Loan Type Dropdown -->
-            <label>
-                Type of Loan:
-                <select name="loan_type" required>
-                    <option value="Personal Loan">Personal Loan</option>
-                    <option value="Car Loan">Car Loan</option>
-                    <option value="Home Loan">Home Loan</option>
-                    <option value="Mortgage Loan">Mortgage Loan</option>
-                    <option value="Educational Loan">Educational Loan</option>
-                    <option value="Other Loan">Other Loan</option>
-                </select>
-            </label>
-
-            <!-- Phone Number Field -->
-            <label>
-                Phone Number:
-                <input type="tel" name="phone" required>
-            </label>
-
-            <!-- Take Home Salary Field (greater than 50,000) -->
-            <label>
-                Take Home Salary (greater than 50,000):
-                <input type="number" name="salary" min="50000" required>
-            </label>
-
-            <!-- Company Name Field -->
-            <label>
-                Company Working For:
-                <input type="text" name="company" required>
-            </label>
-
-            <!-- Applicant's Message -->
-            <label>
-                Message:
-                <textarea name="message" required></textarea>
-            </label>
-
-            <button type="submit">Send</button>
+            <table>
+                <tr>
+                    <td><label for="first_name">First Name:</label></td>
+                    <td><input type="text" name="first_name" id="first_name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="last_name">Last Name:</label></td>
+                    <td><input type="text" name="last_name" id="last_name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="loan_type">Type of Loan:</label></td>
+                    <td>
+                        <select name="loan_type" id="loan_type" required>
+                            <option value="Personal Loan">Personal Loan</option>
+                            <option value="Car Loan">Car Loan</option>
+                            <option value="Home Loan">Home Loan</option>
+                            <option value="Mortgage Loan">Mortgage Loan</option>
+                            <option value="Educational Loan">Educational Loan</option>
+                            <option value="Other Loan">Other Loan</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="phone">Phone Number:</label></td>
+                    <td><input type="tel" name="phone" id="phone" required></td>
+                </tr>
+                <tr>
+                    <td><label for="salary">Take Home Salary (greater than 50,000):</label></td>
+                    <td><input type="number" name="salary" id="salary" min="50000" required></td>
+                </tr>
+                <tr>
+                    <td><label for="company">Company Working For:</label></td>
+                    <td><input type="text" name="company" id="company" required></td>
+                </tr>
+                <tr>
+                    <td><label for="message">Message:</label></td>
+                    <td><textarea name="message" id="message" required></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <button type="submit">Send</button>
+                    </td>
+                </tr>
+            </table>
         </form>
     </main>
 
