@@ -415,6 +415,7 @@ input, select, textarea {
 		input[type="password"]:invalid,
 		input[type="email"]:invalid,
 		input[type="tel"]:invalid,
+		input[type="number"]:invalid,
 		select:invalid,
 		textarea:invalid {
 			box-shadow: none;
@@ -424,6 +425,7 @@ input, select, textarea {
 		input[type="password"]:focus,
 		input[type="email"]:focus,
 		input[type="tel"]:focus,
+		input[type="number"]:invalid,
 		select:focus,
 		textarea:focus {
 			background: rgba(255, 255, 255, 0.075);
