@@ -1298,11 +1298,10 @@ input, select, textarea {
 			border: solid 1px #ffffff;
 			border-radius: 100%;
 		}*/
-		#header .logo img {
-			width: 100%;  /* Rectangle width */
-			height: 100%;  /* Rectangle height */
-			object-fit: contain;
-			line-height: 6rem;
+		#header .logo {
+			width: 10.5rem;  /* Rectangle width */
+			height: 8rem;  /* Rectangle height */
+			line-height: 8rem;
 			border: solid 1px #ffffff;
 			border-radius: 1.5rem; /* Rounded corners */
 			display: flex;
@@ -1310,6 +1309,12 @@ input, select, textarea {
 			align-items: center;
 			overflow: hidden; /* Ensures image does not overflow */
 			background-color: #ffffff; /* Optional: Background for contrast */
+		}
+
+		#header .logo img {
+			width: 100%;  /* Ensures the image fills the container */
+			height: 100%; /* Prevents distortion */
+			object-fit: cover; /* Ensures image covers the area */
 		}
 
 			#header .logo .icon:before {
