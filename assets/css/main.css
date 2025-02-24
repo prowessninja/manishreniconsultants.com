@@ -1301,6 +1301,7 @@ input, select, textarea {
 		#header .logo img {
 			width: 100%;  /* Rectangle width */
 			height: 100%;  /* Rectangle height */
+			object-fit: contain;
 			line-height: 6rem;
 			border: solid 1px #ffffff;
 			border-radius: 1.5rem; /* Rounded corners */
